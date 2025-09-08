@@ -1,8 +1,13 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS 
 import base64, os, tempfile
 from centerline_core import compute_lengths
 
 app = Flask(__name__)
+CORS(app, resources={r"/run": {"origins": [
+    "https://staging2.enromgraphics.co.za",
+    "http://staging2.enromgraphics.co.za"
+]}})  # ★ allow your frontend origin
 
 @app.get("/")
 def health():
