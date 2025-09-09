@@ -15,3 +15,5 @@ openpyxl==3.1.5
 
 
 
+
+Flask-Cors>=4,<5
