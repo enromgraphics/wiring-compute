@@ -1,0 +1,10 @@
+flask
+fonttools
+numpy
+svgwrite
+pandas
+openpyxl
+requests
+
+
+
