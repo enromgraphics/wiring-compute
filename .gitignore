@@ -54,3 +54,30 @@ exports/*
 
 # Local test scripts
 test_compute.py
+
+# Flask instance folder (runtime config/db)
+instance/
+
+# Databases (broader patterns)
+*.db
+*.sqlite
+
+# Logs directory (you already ignore *.log files)
+logs/
+
+# Common caches
+.cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Windows noise
+Desktop.ini
+
+# Sensitive keys/certs (avoid committing these)
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
